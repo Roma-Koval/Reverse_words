@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Task1</string>
+    <string name="button">Go</string>
+    <string name="reverse"></string>
 </resources>
