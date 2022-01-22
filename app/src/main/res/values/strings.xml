@@ -2,4 +2,6 @@
     <string name="app_name">Task1</string>
     <string name="button">Go</string>
     <string name="reverse"></string>
+    <string name="exhint">Enter ignore symbol </string>
+    <string name="reversehint">Enter words</string>
 </resources>

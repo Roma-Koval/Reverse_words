@@ -3,12 +3,16 @@ package com.example.task1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
+public class MainActivity extends AppCompatActivity {
 
 
 
@@ -21,34 +25,44 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickReverse(View view) {
-
-        /*String ReverseString = "";
-        TextView textView = findViewById(R.id.textview);
-        EditText edittext =  findViewById(R.id.edittext);
-        String userString=edittext.getText().toString();
-        char[] EnterString = userString.toCharArray();
-        for(int count=EnterString.length-1;count>=0;count--){
-            ReverseString = ReverseString + EnterString[count];
-        }
-        textView.setText(ReverseString);*/
-
+        EditText exsymbol = findViewById(R.id.exsymbol);
+        String userEx = exsymbol.getText().toString();
+        char ign = userEx.charAt(0);
+        String rev = "";
         EditText edittext =  findViewById(R.id.edittext);
         TextView textView = findViewById(R.id.textview);
         String userString=edittext.getText().toString();
-        String[] words = new StringBuffer(userString).reverse().toString().split(" ");
-        StringBuffer newBuff = new StringBuffer();
-        for(int i = words.length-1; i>=0; i--) {
-            newBuff.append(words[i].replaceAll("[\\W\\d+]", "")).append(" ");
-            if (!Character.isLetter(newBuff.charAt(i))) {
-                newBuff.insert(i, newBuff.charAt(i));
+        char[] result = userString.toCharArray();
+        int r = result.length - 1, l = 0;
+
+
+        while (l < r)
+        {
+            if (result[l]==ign)
+                l++;
+            else if(result[r]==ign)
+                r--;
+
+            else
+            {
+                char tmp = result[l];
+                result[l] = result[r];
+                result[r] = tmp;
+                l++;
+                r--;
             }
         }
-        textView.setText(newBuff);
 
-}
+        for(int i=0; i<result.length; i++){
+            rev = rev + result[i];
+
+        }
+
+        textView.setText(rev);
+
+        }
+
+    }
 
 
-
-
-}
 
