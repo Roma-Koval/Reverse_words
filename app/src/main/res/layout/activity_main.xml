@@ -13,7 +13,7 @@
         android:ems="10"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="@dimen/marginTop_editText"
         android:hint="@string/exhint"
         />
 
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/marginTop_Button_1"
         android:text="@string/button"
         android:onClick="onClickReverse"
         />
@@ -34,7 +34,7 @@
         android:ems="10"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/exsymbol"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="@dimen/marginTop_editText"
         android:hint="@string/reversehint"
         />
 
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/exbutton"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="@dimen/marginTop_Button_2"
         android:text="@string/button"
         android:onClick="onClickReverse"
          />
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button"
         android:layout_alignLeft="@id/edittext"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/marginTop_TextView"
         android:text="@string/reverse"
         />
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTop_editText">18dp</dimen>
+    <dimen name="marginTop_Button_1">16dp</dimen>
+    <dimen name="marginTop_Button_2">14dp</dimen>
+    <dimen name="marginTop_TextView">20dp</dimen>
+</resources>
