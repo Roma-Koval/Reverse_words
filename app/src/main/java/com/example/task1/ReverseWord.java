@@ -23,11 +23,8 @@ public class ReverseWord  {
                 r--;
             }
         }
-
-        for(int i=0; i<result.length; i++){
-            rev = rev + result[i];
-
-        }
+        rev=String.valueOf(result);
         return rev;
+        }
     }
-}
+
