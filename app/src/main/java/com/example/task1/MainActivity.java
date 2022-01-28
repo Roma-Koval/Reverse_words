@@ -23,20 +23,20 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 EditText exsymbol = findViewById(R.id.exsymbol);
                 String userEx = exsymbol.getText().toString();
+
                 EditText edittext =  findViewById(R.id.edittext);
-                TextView textView = findViewById(R.id.textview);
                 String userString=edittext.getText().toString();
 
+                TextView textView = findViewById(R.id.textview);
                 textView.setText(ReverseWord.reverse(userString, userEx));
             }
         });
         }
-
-
     }
 
 
