@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="editText">18dp</dimen>
-    <dimen name="Button_1">16dp</dimen>
-    <dimen name="Button_2">14dp</dimen>
-    <dimen name="TextView">20dp</dimen>
+    <dimen name="edit_text">18dp</dimen>
+    <dimen name="button_1">16dp</dimen>
+    <dimen name="button_2">14dp</dimen>
+    <dimen name="text_view">20dp</dimen>
 </resources>
