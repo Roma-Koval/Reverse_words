@@ -37,8 +37,25 @@ public class ExampleInstrumentedTest {
     }
 
     @Test
-    public void clickExNutton() {
+    public void clickExButtonWithEmptySymbol() {
         onView(withId(R.id.exbutton)).perform(click());
+    }
+
+    @Test
+    public void clickReverseButtonWithEmptyWord(){
+        onView(withId(R.id.button)).perform(click());
+    }
+
+    @Test
+    public void clickExButtonWithSymbol(){
+        onView(withId(R.id.exsymbol)).perform(typeText("k"));
+        onView(withId(R.id.exbutton)).perform(click());
+    }
+
+    @Test
+    public void clickReverseButtonWithWord(){
+        onView(withId(R.id.edittext)).perform(typeText("Pavlik"));
+        onView(withId(R.id.button)).perform(click());
     }
 
     @Test
@@ -48,4 +65,6 @@ public class ExampleInstrumentedTest {
         onView(withId(R.id.button)).perform(click());
         onView(withId(R.id.textview)).check(matches(withText("srepu")));
     }
+
+
 }

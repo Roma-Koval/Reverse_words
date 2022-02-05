@@ -4,12 +4,15 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+import java.lang.ref.SoftReference;
+
+
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class UnitTest {
+public class UnitTest  {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
@@ -21,8 +24,14 @@ public class UnitTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void nullStringTest(){
+    public void nullString(){
         String str = null;
+        assertTrue(str.isEmpty());
+    }
+
+    @Test
+    public void emptyString(){
+        String str = "";
         assertTrue(str.isEmpty());
     }
 

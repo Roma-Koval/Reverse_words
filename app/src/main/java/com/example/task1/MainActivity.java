@@ -10,10 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText exsymbol;
-    EditText edittext;
-    TextView textView;
-    Button button;
+    private EditText exsymbol;
+    private EditText edittext;
+    private TextView textView;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
