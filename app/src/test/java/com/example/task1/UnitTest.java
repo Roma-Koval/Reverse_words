@@ -35,8 +35,38 @@ public class UnitTest {
     }
 
     @Test
-    public void reverseAlgoritmTest() {
+    public void algoritmTest() {
         assertEquals(ReverseWord.reverse("ravlik", "k"), "ilvark");
+    }
+
+    @Test
+    public void algoritmTestWithTwoIgnoreSymbol() {
+        assertEquals(ReverseWord.reverse("predestination", "n"), "oitaitsenderpn");
+    }
+
+    @Test
+    public void algoritmTestWithSpecialCharacter1() {
+        assertEquals(ReverseWord.reverse("maybe%", "m"), "m%ebya");
+    }
+
+    @Test
+    public void algoritmTestWithSpecialCharacter2() {
+        assertEquals(ReverseWord.reverse("m&aybe", "e"), "bya&me");
+    }
+
+    @Test
+    public void algoritmTestWithSpecialCharacter3() {
+        assertEquals(ReverseWord.reverse("r!e#v^e&r*s)(e=-", "*"), "-=e()sr&e*^v#e!r");
+    }
+
+    @Test
+    public void algoritmTestWithTwoWords1() {
+        assertEquals(ReverseWord.reverse("dia don't", "d"), "dai dt'no");
+    }
+
+    @Test
+    public void algoritmTestWithTwoWords2() {
+        assertEquals(ReverseWord.reverse("why not?", "?"), "yhw ton?");
     }
 
 
