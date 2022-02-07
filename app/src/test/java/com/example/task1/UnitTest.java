@@ -1,10 +1,9 @@
 package com.example.task1;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-import java.lang.ref.SoftReference;
 
 
 /**
@@ -12,27 +11,33 @@ import java.lang.ref.SoftReference;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class UnitTest  {
+public class UnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
 
     @Test
-    public  void  addition_isNotCorrect() {
-        assertEquals("Numbers isn't equals!", 5, 2+2);
+    public void addition_isNotCorrect() {
+        assertEquals("Numbers isn't equals!", 5, 2 + 2);
     }
 
     @Test(expected = NullPointerException.class)
-    public void nullString(){
+    public void nullString() {
         String str = null;
         assertTrue(str.isEmpty());
     }
 
     @Test
-    public void emptyString(){
+    public void emptyString() {
         String str = "";
         assertTrue(str.isEmpty());
     }
+
+    @Test
+    public void reverseAlgoritmTest() {
+        assertEquals(ReverseWord.reverse("ravlik", "k"), "ilvark");
+    }
+
 
 }
